@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ReservationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="예약하기"
+        android:textColor="#070707"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="338dp"
+        android:layout_height="182dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_car1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:hint="주차 유형"
+        app:startIconDrawable="@drawable/ic_parkingtype">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompletText"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="#000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:hint="시간선택"
+        app:startIconDrawable="@drawable/ic_time">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompletText2"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="#000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:hint="주차자리"
+        app:startIconDrawable="@drawable/ic_parkingplace">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompletText3"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="#000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="결제금액 : 3000원 "
+        android:textColor="#fc5c65"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_bg"
+        android:drawablePadding="10dp"
+        android:text="결제하기"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:backgroundTint="#F67D7D"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>

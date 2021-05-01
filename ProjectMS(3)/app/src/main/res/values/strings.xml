@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProjectMS</string>
+    <string name="tab_text_1">월권</string>
+    <string name="tab_text_2">일권</string>
+</resources>
